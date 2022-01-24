@@ -1,0 +1,7 @@
+create_table("orders") {
+  t.Column("id", "string")
+  t.Column("items", "text", {null: false})
+  t.Column("status", "smallint", {null: false})
+  t.Column("created_at", "timestamp", {null: true})
+  t.Column("updated_at", "timestamp", {null: true})
+}
